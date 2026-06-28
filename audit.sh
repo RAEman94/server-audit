@@ -9,6 +9,9 @@ echo "Kernel   : $(uname -r)"
 echo "Uptime   : $(uptime -p)"
 echo
 
+export SYSTEMD_PAGER=cat
+export PAGER=cat
+
 ##############################################################################
 echo "==================== OS ===================="
 cat /etc/os-release 2>/dev/null
@@ -49,7 +52,7 @@ echo
 ##############################################################################
 echo "==================== ENABLED SERVICES ===================="
 
-systemctl list-unit-files --state=enabled
+SYSTEMD_PAGER=cat systemctl list-unit-files --state=enabled
 echo
 
 ##############################################################################
