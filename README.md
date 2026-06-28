@@ -30,7 +30,7 @@ bash <(curl -fsSL https://git.raeman.ru/RAEman/server-audit/raw/branch/main/audi
 
 After the audit is finished, the file audit.log will be created on the server.
 
-Option 1: SCP (recommended)
+### Option 1: SCP (recommended)
 
 Run this on your local machine (not on the server):
 ```bash
@@ -42,11 +42,11 @@ scp root@123.123.123.123:/root/audit.log .
 ```
 This will download the file into your current directory.
 
-Option 2: rsync (alternative)
+### Option 2: rsync (alternative)
 ```bash
 rsync -avz root@YOUR_SERVER_IP:/root/audit.log .
 ```
-Option 3: manual copy (fallback)
+### Option 3: manual copy (fallback)
 
 On the server:
 ```bash
