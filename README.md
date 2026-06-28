@@ -11,7 +11,7 @@ It is designed for VPS / Linux servers (especially for setups with Docker, Xray,
 You can run the audit directly from the repository without downloading anything:
 
 ```bash
-bash <(curl -fsSL https://git.raeman.ru/RAEman/server-audit/raw/branch/main/audit.sh) > audit.log
+bash <(curl -fsSL https://raw.githubusercontent.com/RAEman94/server-audit/refs/heads/main/audit.sh) > audit.log
 ```
 This will:
 
@@ -24,7 +24,7 @@ Save output to audit.log
 
 To also see output in real-time while saving it:
 ```bash
-bash <(curl -fsSL https://git.raeman.ru/RAEman/server-audit/raw/branch/main/audit.sh) 2>&1 | tee audit.log
+bash <(curl -fsSL https://raw.githubusercontent.com/RAEman94/server-audit/refs/heads/main/audit.sh) 2>&1 | tee audit.log
 ```
 ## Downloading the report via SSH
 
@@ -86,7 +86,7 @@ For best results, run the audit periodically and compare logs over time to detec
 
 ```bash
 # run audit
-bash <(curl -fsSL https://git.raeman.ru/RAEman/server-audit/raw/branch/main/audit.sh) 2>&1 | tee audit.log
+bash <(curl -fsSL https://raw.githubusercontent.com/RAEman94/server-audit/refs/heads/main/audit.sh) 2>&1 | tee audit.log
 ```
 
 ```bash
